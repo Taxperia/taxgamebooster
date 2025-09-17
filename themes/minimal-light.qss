@@ -1,0 +1,116 @@
+/* Minimal Light Theme - Clean and Professional */
+QWidget {
+    background-color: #ffffff;
+    color: #2c3e50;
+    font-family: "Inter", "Segoe UI", sans-serif;
+    font-size: 13px;
+}
+
+QMainWindow {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+}
+
+/* Buttons */
+QPushButton {
+    background-color: #ffffff;
+    color: #495057;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-weight: 500;
+}
+
+QPushButton:hover {
+    background-color: #f8f9fa;
+    border-color: #6c757d;
+    color: #212529;
+}
+
+QPushButton:pressed {
+    background-color: #e9ecef;
+}
+
+QPushButton[accent="true"] {
+    background-color: #007bff;
+    color: #ffffff;
+    border-color: #007bff;
+}
+
+QPushButton[accent="true"]:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Input Fields */
+QLineEdit, QSpinBox, QDoubleSpinBox, QComboBox {
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    padding: 8px 12px;
+    color: #495057;
+}
+
+QLineEdit:focus, QSpinBox:focus, QDoubleSpinBox:focus, QComboBox:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+/* Tabs */
+QTabWidget::pane {
+    border: 1px solid #dee2e6;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+QTabBar::tab {
+    background-color: #f8f9fa;
+    color: #6c757d;
+    padding: 12px 20px;
+    margin-right: 2px;
+    border: 1px solid #dee2e6;
+    border-bottom: none;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+QTabBar::tab:selected {
+    background-color: #ffffff;
+    color: #495057;
+    border-color: #007bff;
+    border-bottom: 2px solid #007bff;
+}
+
+/* Lists and Tables */
+QListWidget, QTableWidget {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    alternate-background-color: #f8f9fa;
+}
+
+QListWidget::item:selected, QTableWidget::item:selected {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+/* Progress Bars */
+QProgressBar {
+    background-color: #e9ecef;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    text-align: center;
+    color: #495057;
+}
+
+QProgressBar::chunk {
+    background-color: #007bff;
+    border-radius: 3px;
+}
+
+/* Status Bar */
+QStatusBar {
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+    color: #6c757d;
+}

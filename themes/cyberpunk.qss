@@ -1,0 +1,124 @@
+/* Cyberpunk Theme - Neon and Futuristic */
+QWidget {
+    background-color: #0a0a0a;
+    color: #00ff88;
+    font-family: "Consolas", "Courier New", monospace;
+    font-size: 12px;
+}
+
+QMainWindow {
+    background-color: #0a0a0a;
+    border: 2px solid #ff0080;
+}
+
+/* Buttons */
+QPushButton {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                stop:0 #1a1a1a, stop:1 #0a0a0a);
+    color: #00ff88;
+    border: 2px solid #00ff88;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+QPushButton:hover {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                stop:0 #00ff88, stop:1 #00cc66);
+    color: #000000;
+    box-shadow: 0 0 10px #00ff88;
+}
+
+QPushButton:pressed {
+    background: #ff0080;
+    color: #ffffff;
+    border-color: #ff0080;
+}
+
+QPushButton[accent="true"] {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                stop:0 #ff0080, stop:1 #cc0066);
+    border-color: #ff0080;
+    color: #ffffff;
+}
+
+/* Input Fields */
+QLineEdit, QSpinBox, QDoubleSpinBox, QComboBox {
+    background-color: #1a1a1a;
+    border: 2px solid #00ff88;
+    border-radius: 4px;
+    padding: 6px 10px;
+    color: #00ff88;
+    font-family: "Consolas", monospace;
+}
+
+QLineEdit:focus, QSpinBox:focus, QDoubleSpinBox:focus, QComboBox:focus {
+    border-color: #ff0080;
+    background-color: #2a2a2a;
+    box-shadow: 0 0 5px #ff0080;
+}
+
+/* Tabs */
+QTabWidget::pane {
+    border: 2px solid #00ff88;
+    background-color: #0a0a0a;
+}
+
+QTabBar::tab {
+    background: #1a1a1a;
+    color: #00ff88;
+    padding: 10px 16px;
+    margin-right: 2px;
+    border: 2px solid #00ff88;
+    border-bottom: none;
+}
+
+QTabBar::tab:selected {
+    background: #0a0a0a;
+    color: #ff0080;
+    border-color: #ff0080;
+    border-bottom: 2px solid #ff0080;
+}
+
+QTabBar::tab:hover:!selected {
+    background: #2a2a2a;
+    box-shadow: 0 0 5px #00ff88;
+}
+
+/* Lists and Tables */
+QListWidget, QTableWidget {
+    background-color: #0a0a0a;
+    border: 2px solid #00ff88;
+    alternate-background-color: #1a1a1a;
+    gridline-color: #00ff88;
+}
+
+QListWidget::item:selected, QTableWidget::item:selected {
+    background-color: #ff0080;
+    color: #ffffff;
+}
+
+/* Progress Bars */
+QProgressBar {
+    background-color: #1a1a1a;
+    border: 2px solid #00ff88;
+    border-radius: 4px;
+    text-align: center;
+    color: #00ff88;
+    font-weight: bold;
+}
+
+QProgressBar::chunk {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                stop:0 #00ff88, stop:1 #ff0080);
+    border-radius: 2px;
+}
+
+/* Status Bar */
+QStatusBar {
+    background-color: #1a1a1a;
+    border-top: 2px solid #00ff88;
+    color: #00ff88;
+    font-family: "Consolas", monospace;
+}

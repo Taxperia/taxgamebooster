@@ -20,6 +20,9 @@ def _list_tray_icons() -> list[str]:
                 names.append(os.path.splitext(fn)[0])
     except Exception:
         pass
+    # Fallback icons if directory doesn't exist
+    if not names:
+        names = ["tray1", "tray2", "tray3", "modern1", "modern2", "cyberpunk1", "minimal1"]
     return sorted(names)
 
 class SettingsDialog(QDialog):

@@ -20,11 +20,11 @@ def list_available_themes() -> List[str]:
                 names.append(os.path.splitext(fn)[0])
     except Exception:
         pass
-    # En az bir fallback
-    if "dark" not in names:
-        names.append("dark")
-    if "light" not in names:
-        names.append("light")
+    # Fallback themes
+    fallbacks = ["modern-dark", "cyberpunk", "glass-morphism", "minimal-light", "pulse", "dark", "light"]
+    for theme in fallbacks:
+        if theme not in names:
+            names.append(theme)
     return sorted(set(names), key=lambda x: x.lower())
 
 def _read_qss(theme_name: str) -> str:
